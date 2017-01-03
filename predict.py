@@ -16,4 +16,3 @@ with open(filename + '.csv', 'rb') as f:
 		else:
 			result[1] += 1
 print(result)
-		
