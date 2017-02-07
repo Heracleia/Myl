@@ -57,3 +57,6 @@ with plt.style.context('seaborn-whitegrid'):
 	plt.ylabel('PC2')
 	plt.tight_layout()
 	plt.show()
+	
+#Write to file
+np.savetxt(y_data[0] + '_pca.csv', Y_sklearn, delimiter=',')
