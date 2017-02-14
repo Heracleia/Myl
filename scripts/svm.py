@@ -16,7 +16,7 @@ with open(filename, 'r') as f:
 data = np.asarray(data)
 		
 print('Training...')
-clf = svm.OneClassSVM(nu=0.1, kernel="rbf", gamma=0.1)
+clf = svm.OneClassSVM(nu=0.5, gamma=0.1)
 clf.fit(data[0:1000])
 
 joblib.dump(clf, filename.replace('.csv', '.pkl'))
